@@ -36,6 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.boxMessage {
+  position: relative;
+  margin: 0 10px 0 10px;
+  height: 780px;
+}
+.boxChat {
+  height: 650px;
+}
 .avatar {
   margin: auto;
   width: 40px;
@@ -46,4 +54,33 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
+}
+.myMessage {
+  text-align: -webkit-right;
+}
+.avatar_list {
+  margin: auto;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.status_list {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.listUser {
+  height: 425px;
+}
+.avatar_profile {
+  margin: auto;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.deleteIcon {
+  display: none;
+}
+.room:hover .deleteIcon {
+  display: block;
 }

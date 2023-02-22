@@ -1,17 +1,13 @@
-import './App.css';
-import BoxMessage from './components/BoxMessage';
-import InputMessage from './components/InputMessage';
-import Navigation from './components/Navigation';
-
+import "./App.css";
+import ChatRoom from "./pages/chatRoom";
+import Login from "./pages/login";
+import { Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <div className="App w-full h-screen bg-slate-100 fixed top-0">
-      <main className='w-1/3 h-2/3 shadow rounded bg-white mt-20 m-auto relative'>
-        <Navigation></Navigation>
-        <BoxMessage></BoxMessage>
-        <InputMessage></InputMessage>
-      </main>
-    </div>
+    <Routes>
+      <Route path="/" element={<ChatRoom></ChatRoom>}></Route>
+      <Route path="/login" element={<Login></Login>}></Route>
+    </Routes>
   );
 }
 
