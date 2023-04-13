@@ -1,0 +1,48 @@
+.home-page {
+  #courses {
+    .course-list {
+      .course {
+        p {
+          font-size: 1.5rem;
+          transition: all 0.5s;
+          opacity: 0;
+        }
+      }
+      .start-btn {
+        transition: all 0.5s;
+        width: 100%;
+        opacity: 0;
+      }
+      .course:hover p {
+        color: rgb(234 88 12);
+        opacity: 1;
+      }
+      .course:hover .start-btn {
+        opacity: 1;
+        margin-top: -40px;
+      }
+      .course:hover button {
+        opacity: 1;
+      }
+      .course:hover img {
+        opacity: 0.2;
+      }
+    }
+  }
+}
+.stuck {
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation: stuck ease 1s;
+}
+@keyframes stuck {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

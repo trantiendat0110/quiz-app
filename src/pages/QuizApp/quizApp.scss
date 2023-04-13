@@ -1,0 +1,35 @@
+.success {
+  opacity: 1 !important;
+  color: green !important;
+}
+.failed {
+  opacity: 1 !important;
+  color: red !important;
+}
+
+#quiz-app {
+  .quiz-start {
+    .question {
+      .anwserElement {
+        display: block;
+        width: 98%;
+        background-color: #e2e8f0;
+        text-align: left;
+        margin: 0.6rem;
+        padding: .8rem;
+        border-radius: 0.5rem;
+        &:hover {
+          background-color: #ff8a4b;
+          color: #fff;
+        }
+        &:disabled {
+          opacity: 0.4;
+          &:hover {
+            background-color: #e2e8f0;
+            color: #333
+          }
+        }
+      }
+    }
+  }
+}

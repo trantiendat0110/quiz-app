@@ -1,0 +1,37 @@
+.SideBar {
+  animation: header-slide ease 0.5s;
+}
+.cart-icon {
+  .box-cart {
+    animation: opacity-box-cart 0.5s ease-out;
+    display: none;
+  }
+}
+.user-icon {
+  .box-user {
+    animation: opacity-box-cart 0.5s ease-out;
+    display: none;
+  }
+}
+.user-icon:hover > .box-user {
+  display: block;
+}
+.cart-icon:hover > .box-cart {
+  display: block;
+}
+@keyframes header-slide {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes opacity-box-cart {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
